@@ -28,10 +28,6 @@ public class Post extends UserDateAudit {
 	@NotBlank
 	private String body;
 	
-	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "user_id", nullable = false)
-	private User user;
-	
 	@OneToMany(
             mappedBy = "poll",
             cascade = CascadeType.ALL,
