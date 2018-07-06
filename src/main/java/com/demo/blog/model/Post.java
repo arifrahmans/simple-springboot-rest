@@ -11,11 +11,11 @@ import org.hibernate.annotations.BatchSize;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
 
-import com.demo.blog.model.audit.DateAudit;
+import com.demo.blog.model.audit.UserDateAudit;
 
 @Entity
 @Table(name = "posts")
-public class Post extends DateAudit {
+public class Post extends UserDateAudit {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;

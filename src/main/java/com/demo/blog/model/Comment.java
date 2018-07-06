@@ -3,11 +3,11 @@ package com.demo.blog.model;
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 
-import com.demo.blog.model.audit.DateAudit;
+import com.demo.blog.model.audit.UserDateAudit;
 
 @Entity
 @Table(name = "comments")
-public class Comment extends DateAudit {
+public class Comment extends UserDateAudit {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
