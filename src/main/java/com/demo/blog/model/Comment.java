@@ -24,9 +24,8 @@ public class Comment extends UserDateAudit {
 		
 	}
 
-	public Comment(@NotBlank String body, User user, Post post) {
+	public Comment(@NotBlank String body, Post post) {
 		this.body = body;
-		this.user = user;
 		this.post = post;
 	}
 
@@ -44,14 +43,6 @@ public class Comment extends UserDateAudit {
 
 	public void setBody(String body) {
 		this.body = body;
-	}
-
-	public User getUser() {
-		return user;
-	}
-
-	public void setUser(User user) {
-		this.user = user;
 	}
 
 	public Post getPost() {
