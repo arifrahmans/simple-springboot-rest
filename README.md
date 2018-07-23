@@ -1,2 +1,2 @@
 # simple-springboot-rest
-Simple Rest using Spring Boot
+Simple Blog Rest API using Spring Boot + JPA + JWT Auth

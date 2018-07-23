@@ -11,10 +11,6 @@ public class CommentRequest {
 	@NotBlank
 	@Size(min=2, max = 250)
 	private String body;
-	
-	@NotNull
-	@Valid
-	private Post post;
 
 	public String getBody() {
 		return body;
@@ -23,15 +19,6 @@ public class CommentRequest {
 	public void setBody(String body) {
 		this.body = body;
 	}
-
-	public Post getPost() {
-		return post;
-	}
-
-	public void setPost(Post post) {
-		this.post = post;
-	}
-	
 	
 	
 	

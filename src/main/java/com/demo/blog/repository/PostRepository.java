@@ -23,9 +23,5 @@ public interface PostRepository extends JpaRepository<Post, Long> {
 	List<Post>  findByIdIn(List<Long> postIds);
 
     List<Post> findByIdIn(List<Long> pollIds, Sort sort);
-    
-    Page<Post> findByUserOrderByCreateDateDesc(User user, Pageable pageable);
-
-    Page<Post> findAllByOrderByCreateDateDesc(Pageable pageable);
 
 }

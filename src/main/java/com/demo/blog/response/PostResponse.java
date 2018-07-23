@@ -10,7 +10,6 @@ public class PostResponse {
 	private List<CommentResponse> comments;
 	private UserSummary createdBy;
 	private Instant creationDateTime;
-    private Instant expirationDateTime;
     
 	public Long getId() {
 		return id;
@@ -47,12 +46,6 @@ public class PostResponse {
 	}
 	public void setCreationDateTime(Instant creationDateTime) {
 		this.creationDateTime = creationDateTime;
-	}
-	public Instant getExpirationDateTime() {
-		return expirationDateTime;
-	}
-	public void setExpirationDateTime(Instant expirationDateTime) {
-		this.expirationDateTime = expirationDateTime;
 	}
     
     
